@@ -1,0 +1,781 @@
+Prefix(:=<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology>
+Annotation(rdfs:comment "Ontology that models the smart-tourism domain and tourist recommendations.")
+Annotation(rdfs:label "Tourism Ontology")
+
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Accommodation>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Andalusian>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Beach>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BeachHotel>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Bus>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BusinessHotel>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#City>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CulturalEvent>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CulturalSite>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Event>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#GastronomicEvent>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Hotel>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#ItalianRestaurant>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#JapaneseRestaurant>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#LuxuryHotel>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MediterraneanRestaurant>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Metro>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MexicanRestaurant>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Monument>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Museum>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MusicEvent>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Organization>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Park>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Place>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#PrivateTransport>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#PublicBicycle>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#PublicTransport>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Restaurant>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RuralHotel>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#SportEvent>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Taxi>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TechnologicalEvent>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TouristAttraction>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Tram>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransportCompany>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Transportation>))
+Declaration(Class(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TuristicHotel>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAccommodation>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAttraction>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasEvent>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasRestaurant>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasTransportation>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isOperatedBy>))
+Declaration(DataProperty(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAverageCost>))
+Declaration(DataProperty(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAveragePrice>))
+Declaration(DataProperty(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasDate>))
+Declaration(DataProperty(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID>))
+Declaration(DataProperty(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasLocation>))
+Declaration(DataProperty(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName>))
+Declaration(DataProperty(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasPrice>))
+Declaration(DataProperty(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasRating>))
+Declaration(DataProperty(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasStars>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#AutobúsSevilla>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Barcelona>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BicicletaPública>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Bilbao>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BilbaoSkiResort>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BilbaoTaxi>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CarnavalSevilla>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CarnavalValència>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CastellMadrid>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralBarcelona>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralBilbao>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralSevilla>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralValencia>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CityMadrid>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CongresBilbao>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CongrésBarcelona>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#FestivalValència>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelPalaceMadrid>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelRoyalBarcelona>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelSolBarcelona>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelSolValencia>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelVistaSevilla>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Madrid>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MetroBarcelona>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MetroMadrid>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantFusióBilbao>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantFusióMadrid>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantGourmetBarcelona>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantGourmetSevilla>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantSaborValència>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Sevilla>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TramviaValencia>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransBilbao>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransSevilla>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransValència>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#UrbanMadrid>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Valencia>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAccommodation> (Has Accomodation)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAccommodation> "Indicates if there are any accomodations")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAccommodation> "Has Accomodation")
+InverseObjectProperties(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAccommodation> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn>)
+ObjectPropertyDomain(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAccommodation> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#City>)
+ObjectPropertyRange(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAccommodation> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Accommodation>)
+
+# Object Property: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAttraction> (Has Attraction)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAttraction> "Indicates if there are any attractions")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAttraction> "Has Attraction")
+InverseObjectProperties(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAttraction> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn>)
+ObjectPropertyDomain(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAttraction> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#City>)
+ObjectPropertyRange(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAttraction> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TouristAttraction>)
+
+# Object Property: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasEvent> (Has Event)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasEvent> "Indicates if there are any events")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasEvent> "Has Event")
+InverseObjectProperties(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasEvent> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn>)
+ObjectPropertyDomain(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasEvent> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#City>)
+ObjectPropertyRange(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasEvent> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Event>)
+
+# Object Property: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasRestaurant> (Has Restaurant)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasRestaurant> "Indicates if there are any restaurants")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasRestaurant> "Has Restaurant")
+InverseObjectProperties(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasRestaurant> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn>)
+ObjectPropertyDomain(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasRestaurant> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#City>)
+ObjectPropertyRange(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasRestaurant> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Restaurant>)
+
+# Object Property: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasTransportation> (Has Transportation)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasTransportation> "Indicates if there are any ways of transportation")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasTransportation> "Has Transportation")
+InverseObjectProperties(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasTransportation> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn>)
+ObjectPropertyDomain(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasTransportation> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#City>)
+ObjectPropertyRange(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasTransportation> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Transportation>)
+
+# Object Property: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> (Is Located In)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> "Indicates where is it located")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> "Is Located In")
+FunctionalObjectProperty(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn>)
+ObjectPropertyDomain(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Accommodation>)
+ObjectPropertyDomain(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Event>)
+ObjectPropertyDomain(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Restaurant>)
+ObjectPropertyDomain(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TouristAttraction>)
+ObjectPropertyDomain(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Transportation>)
+ObjectPropertyRange(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#City>)
+
+# Object Property: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isOperatedBy> (Is Operated By)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isOperatedBy> "Indicates who operates it")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isOperatedBy> "Is Operated By")
+FunctionalObjectProperty(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isOperatedBy>)
+ObjectPropertyDomain(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isOperatedBy> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Transportation>)
+ObjectPropertyRange(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isOperatedBy> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransportCompany>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAverageCost> (Average Cost)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAverageCost> "Indicates the average cost")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAverageCost> "Average Cost")
+FunctionalDataProperty(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAverageCost>)
+DataPropertyDomain(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAverageCost> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Transportation>)
+DataPropertyRange(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAverageCost> xsd:decimal)
+
+# Data Property: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAveragePrice> (Average Price)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAveragePrice> "Indicates the average price")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAveragePrice> "Average Price")
+FunctionalDataProperty(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAveragePrice>)
+DataPropertyDomain(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAveragePrice> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Restaurant>)
+DataPropertyRange(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAveragePrice> xsd:decimal)
+
+# Data Property: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasDate> (Date)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasDate> "Indicates date")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasDate> "Date")
+FunctionalDataProperty(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasDate>)
+DataPropertyDomain(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasDate> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Event>)
+DataPropertyRange(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasDate> xsd:dateTime)
+
+# Data Property: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> (ID)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> "Indicates an ID")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> "Has ID")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> "ID")
+FunctionalDataProperty(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID>)
+DataPropertyDomain(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> owl:Thing)
+DataPropertyRange(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> xsd:integer)
+
+# Data Property: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasLocation> (Location)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasLocation> "Indicates the location")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasLocation> "Location")
+FunctionalDataProperty(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasLocation>)
+DataPropertyDomain(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasLocation> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#City>)
+DataPropertyRange(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasLocation> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> (Name)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> "Indicates name")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> "Name")
+FunctionalDataProperty(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName>)
+DataPropertyDomain(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> owl:Thing)
+DataPropertyRange(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasPrice> (Price)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasPrice> "Indicates the price")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasPrice> "Price")
+DataPropertyRange(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasPrice> xsd:decimal)
+
+# Data Property: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasRating> (Rating)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasRating> "Indicates the rating")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasRating> "Rating")
+FunctionalDataProperty(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasRating>)
+DataPropertyRange(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasRating> xsd:decimal)
+
+# Data Property: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasStars> (Stars)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasStars> "Indicates the stars of a hotel")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasStars> "Stars")
+FunctionalDataProperty(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasStars>)
+DataPropertyDomain(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasStars> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Hotel>)
+DataPropertyRange(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasStars> xsd:integer)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Accommodation> (Accomodation)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Accommodation> "A facility that provides lodging—either temporary or extended—to guests or residents.")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Accommodation> "Accomodation")
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Accommodation> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Place>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Andalusian> (Andalusian)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Andalusian> "An establishment where Andalusian food and beverages are prepared and served to customers, typically for on-premise consumption, and which may offer additional services such as takeaway, delivery, or event hosting.")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Andalusian> "Andalusian")
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Andalusian> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Restaurant>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Beach> (Beach)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Beach> "A place to relax, sun bath, swim and snorkel.")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Beach> "Beach")
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Beach> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TouristAttraction>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BeachHotel> (Beach)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BeachHotel> "A commercial accommodation facility on the beach that offers lodging, meals, and various guest services, usually on a short-stay basis, and is typically categorized by star rating or quality standards.")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BeachHotel> "Beach")
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BeachHotel> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Hotel>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Bus> (Bus)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Bus> "A public-transport vehicle that runs mainly in urban or peri-urban environments, sometimes can connect multiple cities.")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Bus> "Bus")
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Bus> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#PublicTransport>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BusinessHotel> (Business)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BusinessHotel> "A commercial accommodation facility on a city for business trips that offers lodging, meals, and various guest services, usually on a short-stay basis, and is typically categorized by star rating or quality standards.")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BusinessHotel> "Business")
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BusinessHotel> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Hotel>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#City> (City)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#City> "A large, permanent human settlement that serves as an administrative, economic, and cultural hub, typically featuring a defined legal status, municipal government, and significant population density.")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#City> "City")
+EquivalentClasses(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#City> ObjectMinCardinality(1 <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasTransportation> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#City>))
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#City> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Place>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CulturalEvent> (Cultural)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CulturalEvent> "temporal entity representing any happening or activity based on culture that occurs at a specific moment or during a defined period and may involve particular actors, locations, and outcomes.")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CulturalEvent> "Cultural")
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CulturalEvent> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Event>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CulturalSite> (Cultural Site)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CulturalSite> "A place with cultural value accepting visitors")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CulturalSite> "Cultural Site")
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CulturalSite> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TouristAttraction>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Event> (Event)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Event> "temporal entity representing any happening or activity that occurs at a specific moment or during a defined period and may involve particular actors, locations, and outcomes.")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Event> "Event")
+EquivalentClasses(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Event> DataExactCardinality(1 <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasDate> xsd:dateTime))
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#GastronomicEvent> (Gastronomic)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#GastronomicEvent> "temporal entity representing any happening or activity based on eating that occurs at a specific moment or during a defined period and may involve particular actors, locations, and outcomes.")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#GastronomicEvent> "Gastronomic")
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#GastronomicEvent> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Event>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Hotel> (Hotel)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Hotel> "A commercial accommodation facility that offers lodging, meals, and various guest services, usually on a short-stay basis, and is typically categorized by star rating or quality standards.")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Hotel> "Hotel")
+EquivalentClasses(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Hotel> DataSomeValuesFrom(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasRating> owl:rational))
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Hotel> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Accommodation>)
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Hotel> DataSomeValuesFrom(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasStars> owl:rational))
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#ItalianRestaurant> (Italian)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#ItalianRestaurant> "An establishment where italian food and beverages are prepared and served to customers, typically for on-premise consumption, and which may offer additional services such as takeaway, delivery, or event hosting.")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#ItalianRestaurant> "Italian")
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#ItalianRestaurant> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Restaurant>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#JapaneseRestaurant> (Japanese)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#JapaneseRestaurant> "An establishment where japanese food and beverages are prepared and served to customers, typically for on-premise consumption, and which may offer additional services such as takeaway, delivery, or event hosting.")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#JapaneseRestaurant> "Japanese")
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#JapaneseRestaurant> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Restaurant>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#LuxuryHotel> (Luxury)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#LuxuryHotel> "A commercial luxury accommodation facility that offers lodging, meals, and various guest services, usually on a short-stay basis, and is typically categorized by star rating or quality standards.")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#LuxuryHotel> "Luxury")
+EquivalentClasses(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#LuxuryHotel> ObjectUnionOf(DataHasValue(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasStars> "4"^^xsd:integer) DataHasValue(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasStars> "5"^^xsd:integer)))
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#LuxuryHotel> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Hotel>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MediterraneanRestaurant> (Mediterranean)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MediterraneanRestaurant> "An establishment where mediterranean food and beverages are prepared and served to customers, typically for on-premise consumption, and which may offer additional services such as takeaway, delivery, or event hosting.")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MediterraneanRestaurant> "Mediterranean")
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MediterraneanRestaurant> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Restaurant>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Metro> (Metro)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Metro> "A rail public-transport vehicle that runs mainly underground in urban environments on fixed tracks.")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Metro> "Metro")
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Metro> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#PublicTransport>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MexicanRestaurant> (Mexican)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MexicanRestaurant> "An establishment where mexican food and beverages are prepared and served to customers, typically for on-premise consumption, and which may offer additional services such as takeaway, delivery, or event hosting.")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MexicanRestaurant> "Mexican")
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MexicanRestaurant> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Restaurant>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Monument> (Monument)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Monument> "A structure, object, or site of historical, cultural, architectural, or artistic significance that has been deliberately created and is preserved as part of a cultural or national heritage.")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Monument> "Monument")
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Monument> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TouristAttraction>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Museum> (Museum)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Museum> "An institution that acquires, conserves, researches, exhibits, and communicates tangible or intangible heritage for the purposes of education, study, and enjoyment.")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Museum> "Museum")
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Museum> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TouristAttraction>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MusicEvent> (Music)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MusicEvent> "temporal entity representing any happening or activity based on music that occurs at a specific moment or during a defined period and may involve particular actors, locations, and outcomes.")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MusicEvent> "Music")
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MusicEvent> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Event>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Organization> (Organization)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Organization> "Parent class for the organization of the trip")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Organization> "Organization")
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Park> (Park)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Park> "Natural public space usually in a city with nature to relax or walk.")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Park> "Park")
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Park> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TouristAttraction>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Place> (Place)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Place> "An identifiable location—physical or virtual—characterized by geographic coordinates, address information, or spatial context, which can host events, accommodate facilities, or serve as a point of interest within a wider domain.")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Place> "Place")
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#PrivateTransport> (Private transportation)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#PrivateTransport> "Private transportation that you have to order and pay for")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#PrivateTransport> "Private transportation")
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#PrivateTransport> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Transportation>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#PublicBicycle> (Bicycle)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#PublicBicycle> "Public bikes that you can rent")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#PublicBicycle> "Bicycle")
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#PublicBicycle> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#PublicTransport>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#PublicTransport> (Public transportation)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#PublicTransport> "Affordable means of transport usually subsidized by the government")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#PublicTransport> "Public transportation")
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#PublicTransport> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Transportation>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Restaurant> (Restaurant)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Restaurant> "An establishment where food and beverages are prepared and served to customers, typically for on-premise consumption, and which may offer additional services such as takeaway, delivery, or event hosting.")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Restaurant> "Restaurant")
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Restaurant> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Place>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RuralHotel> (Rural)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RuralHotel> "A commercial accommodation facility on the country that offers lodging, meals, and various guest services, usually on a short-stay basis, and is typically categorized by star rating or quality standards.")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RuralHotel> "Rural")
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RuralHotel> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Hotel>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#SportEvent> (Sports)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#SportEvent> "temporal entity representing any happening or activity based on sports that occurs at a specific moment or during a defined period and may involve particular actors, locations, and outcomes.")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#SportEvent> "Sports")
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#SportEvent> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Event>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Taxi> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Taxi>)
+
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Taxi> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#PrivateTransport>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TechnologicalEvent> (Tech)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TechnologicalEvent> "temporal entity representing any happening or activity based on technology that occurs at a specific moment or during a defined period and may involve particular actors, locations, and outcomes.")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TechnologicalEvent> "Tech")
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TechnologicalEvent> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Event>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TouristAttraction> (Tourist Attraction)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TouristAttraction> "A place, site, or feature that draws visitors for its cultural, historical, natural, recreational, or entertainment value.")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TouristAttraction> "Tourist Attraction")
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TouristAttraction> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Place>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Tram> (Tram)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Tram> "A light-rail public-transport vehicle that runs mainly in urban or peri-urban environments on fixed tracks.")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Tram> "Tram")
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Tram> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#PublicTransport>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransportCompany> (Transport Company)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransportCompany> "Company that organizes the transportation")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransportCompany> "Transport Company")
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransportCompany> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Organization>)
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Transportation> (Transportation)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Transportation> "Parent class for the transportation on the trip")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Transportation> "Transportation")
+
+# Class: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TuristicHotel> (Turistic)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TuristicHotel> "A turistic accommodation facility that offers lodging, meals, and various guest services, usually on a short-stay basis, and is typically categorized by star rating or quality standards.")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TuristicHotel> "Turistic")
+SubClassOf(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TuristicHotel> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Hotel>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#AutobúsSevilla> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#AutobúsSevilla>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Bus> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#AutobúsSevilla>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#AutobúsSevilla> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Sevilla>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isOperatedBy> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#AutobúsSevilla> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransSevilla>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAverageCost> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#AutobúsSevilla> "9.48"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#AutobúsSevilla> "10"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#AutobúsSevilla> "Sevilla Bus")
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Barcelona> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Barcelona>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#City> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Barcelona>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Barcelona> "4"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasLocation> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Barcelona> "41.3874,2.1686")
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Barcelona> "Barcelona")
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BicicletaPública> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BicicletaPública>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#PublicBicycle> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BicicletaPública>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BicicletaPública> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Madrid>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isOperatedBy> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BicicletaPública> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CityMadrid>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAverageCost> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BicicletaPública> "4.32"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BicicletaPública> "8"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BicicletaPública> "Public Bicycle")
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Bilbao> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Bilbao>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#City> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Bilbao>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Bilbao> "6"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasLocation> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Bilbao> "43.2630,-2.9350")
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Bilbao> "Bilbao")
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BilbaoSkiResort> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BilbaoSkiResort>)
+
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BilbaoSkiResort> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Bilbao>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BilbaoSkiResort> "204"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BilbaoSkiResort> "Bilbao Ski Resort")
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasPrice> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BilbaoSkiResort> "160"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasRating> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BilbaoSkiResort> "4.1"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasStars> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BilbaoSkiResort> "4"^^xsd:integer)
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BilbaoTaxi> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BilbaoTaxi>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Taxi> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BilbaoTaxi>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BilbaoTaxi> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Bilbao>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isOperatedBy> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BilbaoTaxi> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransBilbao>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAverageCost> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BilbaoTaxi> "5.75"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BilbaoTaxi> "2"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BilbaoTaxi> "Bilbao Taxi")
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CarnavalSevilla> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CarnavalSevilla>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TechnologicalEvent> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CarnavalSevilla>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CarnavalSevilla> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Sevilla>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasDate> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CarnavalSevilla> "2024-03-09T18:00:00"^^xsd:dateTime)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CarnavalSevilla> "58"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CarnavalSevilla> "Sevilla Carnaval")
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CarnavalValència> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CarnavalValència>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MusicEvent> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CarnavalValència>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CarnavalValència> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Valencia>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasDate> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CarnavalValència> "2024-01-28T18:00:00"^^xsd:dateTime)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CarnavalValència> "17"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CarnavalValència> "València Carnaval")
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CastellMadrid> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CastellMadrid>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Monument> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CastellMadrid>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CastellMadrid> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Madrid>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CastellMadrid> "68"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CastellMadrid> "Madrid Castle")
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasRating> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CastellMadrid> "4.0"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralBarcelona> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralBarcelona>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Beach> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralBarcelona>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralBarcelona> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Barcelona>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralBarcelona> "20"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralBarcelona> "Barcelona Cathedral")
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasRating> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralBarcelona> "3.7"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralBilbao> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralBilbao>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Park> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralBilbao>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralBilbao> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Bilbao>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralBilbao> "59"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralBilbao> "Bilbao Cathedral")
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasRating> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralBilbao> "3.7"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralSevilla> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralSevilla>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CulturalSite> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralSevilla>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralSevilla> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Sevilla>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralSevilla> "91"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralSevilla> "Sevilla Cathedral")
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasRating> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralSevilla> "4.6"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralValencia> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralValencia>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Museum> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralValencia>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralValencia> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Valencia>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralValencia> "53"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralValencia> "València Cathedral")
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasRating> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CatedralValencia> "4.3"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CityMadrid> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CityMadrid>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransportCompany> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CityMadrid>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CityMadrid> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Madrid>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CityMadrid> "3"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CityMadrid> "City Madrid")
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CongresBilbao> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CongresBilbao>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CulturalEvent> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CongresBilbao>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CongresBilbao> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Bilbao>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasDate> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CongresBilbao> "2024-12-01T18:00:00"^^xsd:dateTime)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CongresBilbao> "3"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CongresBilbao> "Bilbao Congress")
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CongrésBarcelona> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CongrésBarcelona>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#GastronomicEvent> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CongrésBarcelona>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CongrésBarcelona> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Barcelona>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasDate> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CongrésBarcelona> "2024-06-28T18:00:00"^^xsd:dateTime)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CongrésBarcelona> "10"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#CongrésBarcelona> "Barcelona Congress")
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#FestivalValència> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#FestivalValència>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#SportEvent> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#FestivalValència>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#FestivalValència> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Valencia>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasDate> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#FestivalValència> "2024-12-23T18:00:00"^^xsd:dateTime)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#FestivalValència> "47"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#FestivalValència> "Valencia Festival")
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelPalaceMadrid> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelPalaceMadrid>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BusinessHotel> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelPalaceMadrid>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelPalaceMadrid> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Madrid>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelPalaceMadrid> "14"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelPalaceMadrid> "Hotel Palace Madrid")
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasPrice> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelPalaceMadrid> "91"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasRating> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelPalaceMadrid> "4.5"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasStars> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelPalaceMadrid> "5"^^xsd:integer)
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelRoyalBarcelona> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelRoyalBarcelona>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#BeachHotel> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelRoyalBarcelona>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelRoyalBarcelona> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Barcelona>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelRoyalBarcelona> "9"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelRoyalBarcelona> "Hotel Royal Barcelona")
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasPrice> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelRoyalBarcelona> "252"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasRating> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelRoyalBarcelona> "4.0"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasStars> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelRoyalBarcelona> "4"^^xsd:integer)
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelSolBarcelona> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelSolBarcelona>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RuralHotel> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelSolBarcelona>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelSolBarcelona> "33"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelSolBarcelona> "Hotel Sol Barcelona")
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasPrice> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelSolBarcelona> "189"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasRating> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelSolBarcelona> "3.5"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasStars> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelSolBarcelona> "5"^^xsd:integer)
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelSolValencia> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelSolValencia>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#LuxuryHotel> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelSolValencia>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelSolValencia> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Valencia>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelSolValencia> "21"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelSolValencia> "Hotel Sol València")
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasPrice> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelSolValencia> "291"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasRating> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelSolValencia> "4.8"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasStars> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelSolValencia> "5"^^xsd:integer)
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelVistaSevilla> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelVistaSevilla>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TuristicHotel> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelVistaSevilla>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelVistaSevilla> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Sevilla>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelVistaSevilla> "46"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelVistaSevilla> "Hotel Vista Sevilla")
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasPrice> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelVistaSevilla> "292"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasRating> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelVistaSevilla> "4.9"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasStars> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#HotelVistaSevilla> "5"^^xsd:integer)
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Madrid> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Madrid>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#City> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Madrid>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Madrid> "3"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasLocation> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Madrid> "40.4168,-3.7038")
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Madrid> "Madrid")
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MetroBarcelona> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MetroBarcelona>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransportCompany> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MetroBarcelona>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MetroBarcelona> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Barcelona>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MetroBarcelona> "4"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MetroBarcelona> "Metro Barcelona")
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MetroMadrid> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MetroMadrid>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Metro> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MetroMadrid>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MetroMadrid> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Madrid>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isOperatedBy> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MetroMadrid> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#UrbanMadrid>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAverageCost> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MetroMadrid> "8.85"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MetroMadrid> "1"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MetroMadrid> "Madrid Metro")
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantFusióBilbao> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantFusióBilbao>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MexicanRestaurant> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantFusióBilbao>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantFusióBilbao> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Bilbao>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAveragePrice> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantFusióBilbao> "46"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantFusióBilbao> "72"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantFusióBilbao> "Restaurant Fusió Bilbao")
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasRating> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantFusióBilbao> "5.0"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantFusióMadrid> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantFusióMadrid>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#ItalianRestaurant> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantFusióMadrid>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantFusióMadrid> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Madrid>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAveragePrice> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantFusióMadrid> "37"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantFusióMadrid> "19"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantFusióMadrid> "Restaurant Fusió Madrid")
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasRating> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantFusióMadrid> "4.8"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantGourmetBarcelona> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantGourmetBarcelona>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#JapaneseRestaurant> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantGourmetBarcelona>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantGourmetBarcelona> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Barcelona>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAveragePrice> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantGourmetBarcelona> "68"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantGourmetBarcelona> "68"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantGourmetBarcelona> "Restaurant Gourmet Barcelona")
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasRating> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantGourmetBarcelona> "4.9"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantGourmetSevilla> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantGourmetSevilla>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Andalusian> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantGourmetSevilla>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantGourmetSevilla> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Sevilla>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAveragePrice> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantGourmetSevilla> "11"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantGourmetSevilla> "24"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantGourmetSevilla> "Restaurant Gourmet Sevilla")
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasRating> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantGourmetSevilla> "3.8"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantSaborValència> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantSaborValència>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#MediterraneanRestaurant> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantSaborValència>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantSaborValència> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Valencia>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAveragePrice> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantSaborValència> "28"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantSaborValència> "37"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantSaborValència> "Restaurant Sabor València")
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasRating> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#RestaurantSaborValència> "4.2"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Sevilla> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Sevilla>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#City> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Sevilla>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Sevilla> "10"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasLocation> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Sevilla> "37.3886,-5.9823")
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Sevilla> "Sevilla")
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TramviaValencia> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TramviaValencia>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Tram> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TramviaValencia>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TramviaValencia> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Valencia>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isOperatedBy> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TramviaValencia> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransValència>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasAverageCost> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TramviaValencia> "9.05"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TramviaValencia> "11"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TramviaValencia> "Valencia Tram")
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransBilbao> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransBilbao>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransportCompany> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransBilbao>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransBilbao> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Bilbao>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransBilbao> "2"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransBilbao> "Trans Bilbao")
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransSevilla> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransSevilla>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransportCompany> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransSevilla>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransSevilla> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Sevilla>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransSevilla> "5"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransSevilla> "Trans Sevilla")
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransValència> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransValència>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransportCompany> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransValència>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransValència> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Valencia>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransValència> "6"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransValència> "Trans València")
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#UrbanMadrid> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#UrbanMadrid>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#TransportCompany> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#UrbanMadrid>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#isLocatedIn> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#UrbanMadrid> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Madrid>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#UrbanMadrid> "1"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#UrbanMadrid> "Urban Madrid")
+
+# Individual: <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Valencia> (<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Valencia>)
+
+ClassAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#City> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Valencia>)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasID> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Valencia> "2"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasLocation> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Valencia> "39.4699,-0.3763")
+DataPropertyAssertion(<http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#hasName> <http://www.semanticweb.org/lluis/ontologies/2025/3/tourism-ontology#Valencia> "Valencia")
+
+
+)
